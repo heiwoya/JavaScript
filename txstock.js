@@ -56,10 +56,10 @@ let sessionTime = Math.round(new Date().getTime())
 let rndtime = "" //毫秒
 let todayDate = formatDateTime(new Date());
 
-var cash = ($.isNode() ? (process.env.TxStockCash) : ($.getval('TxStockCash'))) || 5; //0为不自动提现,1为自动提现1元,5为自动提现5元
-var help = ($.isNode() ? (process.env.TxStockHelp) : ($.getval('TxStockHelp'))) || 1; //0为不做分享助力任务，1为多用户互相分享助力
-var newbie = ($.isNode() ? (process.env.TxStockNewbie) : ($.getval('TxStockNewbie'))) || 0; //0为不做新手任务，1为自动做新手任务
-var helpOrder = ($.isNode() ? (process.env.TxStockHelpOrder) : ($.getval('TxStockHelpOrder'))) || "";
+let cash = ($.isNode() ? (process.env.TxStockCash) : ($.getval('TxStockCash'))) || 5; //0为不自动提现,1为自动提现1元,5为自动提现5元
+let help = ($.isNode() ? (process.env.TxStockHelp) : ($.getval('TxStockHelp'))) || 1; //0为不做分享助力任务，1为多用户互相分享助力
+let newbie = ($.isNode() ? (process.env.TxStockNewbie) : ($.getval('TxStockNewbie'))) || 0; //0为不做新手任务，1为自动做新手任务
+let helpOrder = ($.isNode() ? (process.env.TxStockHelpOrder) : ($.getval('TxStockHelpOrder'))) || "";
 
 const appUrlArr = [];
 let appUrlArrVal = "";
@@ -151,9 +151,9 @@ let bullTaskArray = {
     "feed":{"taskName":"喂长牛", "action":"feed", "actid":1105},
 }
 
-var TxStockAppUrl
-var TxStockAppHeader
-var TxStockWxHeader
+let TxStockAppUrl
+let TxStockAppHeader
+let TxStockWxHeader
 
 ///////////////////////////////////////////////////////////////////
 
