@@ -38,7 +38,7 @@ if (!jctqCookie) {
 	        for (let k = 0; k < jctqCookieArr.length; k++) {
                 $.message = ""
                 bodyVal = jctqCookieArr[k]
-                var time1 = Date.parse( new Date() ).toString();
+                let time1 = Date.parse( new Date() ).toString();
                 time1 = time1.substr(0,10);
                 jctqCookie1= time1 + '&' + bodyVal
                 //待处理cookie
