@@ -5,8 +5,8 @@ let jctqCookie= $.isNode() ? (process.env.jctqCookie ? process.env.jctqCookie : 
 let jctqCookieArr = []
 let jctqCookies = ""
 
-var myDate = new Date();
-var hour=myDate.getHours();
+let myDate = new Date();
+let hour=myDate.getHours();
 console.log(hour)
 
 
@@ -49,7 +49,7 @@ console.log(hour)
 
 
              if (hour > 4 && hour !== 10 && hour !== 16 && hour !== 22) {
-                 var time1 = Date.parse(new Date()).toString();
+                 let time1 = Date.parse(new Date()).toString();
                  time1 = time1.substr(0, 10);
                  bodyVal = jctqCookieArr[k].split('&uid=')[0];
                  cookie = bodyVal.replace(/zqkey=/, "cookie=")
