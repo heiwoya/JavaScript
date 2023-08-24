@@ -5,8 +5,8 @@ let jctqCookie= $.isNode() ? (process.env.jctqCookie ? process.env.jctqCookie : 
 let jctqCookieArr = []
 let jctqCookies = ""
 
-var myDate = new Date();
-var hour=myDate.getHours();
+let myDate = new Date();
+let hour=myDate.getHours();
 console.log(hour)
 
 
