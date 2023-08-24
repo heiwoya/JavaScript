@@ -55,7 +55,7 @@ let shangtuoUA = ''
 let userNum = 0
 let userInfo = ""
 
-var packWithdrawAmount = ($.isNode() ? (process.env.stCash) : ($.getval('stCash'))) || 0.5;
+let packWithdrawAmount = ($.isNode() ? (process.env.stCash) : ($.getval('stCash'))) || 0.5;
 
 let secretCode
 
