@@ -5,8 +5,8 @@ let jctqCookie= $.isNode() ? (process.env.jctqCookie ? process.env.jctqCookie : 
 let jctqCookieArr = []
 let jctqCookies = ""
 let remain =100
-var time = Date.parse( new Date() ).toString();
-var time1 = time.substr(0,10);
+let time = Date.parse( new Date() ).toString();
+let time1 = time.substr(0,10);
 
 if (!jctqCookie) {
      $.msg($.name, '【提示】进入点击右下角"赚钱图标"，获取cookie，再跑一次脚本', '不知道说啥好', {
